@@ -10,13 +10,6 @@
 # Вывод: [1, 9, 13, 14, 19]
 from random import randint
 
-size_ = int(input('Enter size of list: '))
-list_ = [randint(-10, 10) for i in range(size_)]
+list_ = [randint(-10, 10) for i in range(int(input('Enter size of list: ')))]
 border = list(map(int, (input("Enter a range of numbers using a spacebar: ").split())))
-
-print(list_)
-new_list = []
-for i in range(len(list_)):
-    if border[0] <= list_[i] <= border[1]:
-        new_list.append(list_[i])
-print(new_list)
+new_list = print([i for i in range(len(list_)) if border[0] <= list_[i] <= border[1]])

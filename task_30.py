@@ -11,8 +11,8 @@
 
 # list_con = []
 # list_str = (input("Введите последовательность трех чисел: ").split())
-list_int = list(map(int, (input("Введите последовательность трех чисел: ").split())))
-print(list_int)
+list_int = list(map(int, (input("Enter a numbers using a spacebar for progression an = a1 + (n-1) * d: ").split())))
+
 for item in range(1, list_int[2] + 1):
-    progration = list_int[0] + (item-1) * list_int[1]
-    print(progration, end=' ')
+    progression = list_int[0] + (item-1) * list_int[1]
+    print(progression, end=' ')
