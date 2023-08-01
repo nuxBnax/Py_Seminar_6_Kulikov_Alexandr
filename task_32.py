@@ -18,5 +18,5 @@ print(list_)
 new_list = []
 for i in range(len(list_)):
     if border[0] <= list_[i] <= border[1]:
-        new_list.append(list_[i])
+        new_list.append(i)
 print(new_list)
